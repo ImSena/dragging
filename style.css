@@ -1,0 +1,58 @@
+*{
+box-sizing: border-box;
+overflow: hidden;
+padding: 0;
+margin: 0;
+}
+
+.board{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+    gap: 5px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 198, 0);
+    height: 10vh;
+    width: 50vw;
+}
+
+.card{
+    height: 45px;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropzone{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.highlight{
+    background-color: rgba(255, 0, 0, 0.428);
+}
+
+.card, .dropzone{
+    transition: .4s;
+}
+
+.is-dragging{
+    cursor: move;
+    opacity: 0.3;
+}
+
+.zoneover{
+    background-color: green;
+}
